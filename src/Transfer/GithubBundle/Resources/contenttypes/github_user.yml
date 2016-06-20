@@ -1,0 +1,90 @@
+github_user:
+    identifier: github_user
+    name_schema: <full_name>
+    contenttype_groups:
+        - Github
+        - Users
+    fields:
+        login:
+            type: ezstring
+            position: 10
+            is_required: true
+            main_language_code: eng-GB
+#name
+        name:
+            type: ezstring
+            position: 20
+            is_required: true
+            main_language_code: eng-GB
+        user_account:
+            type: ezuser
+            position: 25
+            is_required: true
+            main_language_code: eng-GB
+        image:
+            type: ezimage
+            position: 30
+            main_language_code: eng-GB
+        company:
+            type: ezstring
+            position: 35
+            main_language_code: eng-GB
+# html_url
+        url:
+            type: ezurl
+            position: 40
+            main_language_code: eng-GB
+# id
+        github_id:
+            type: ezinteger
+            position: 50
+            main_language_code: eng-GB
+        location:
+            type: ezstring
+            position: 60
+            main_language_code: eng-GB
+        bio:
+            type: eztext
+            position: 70
+            main_language_code: eng-GB
+        organizations:
+            type: ezobjectrelationlist
+            position: 80
+            main_language_code: eng-GB
+        repositories:
+            type: ezobjectrelationlist
+            position: 90
+            main_language_code: eng-GB
+
+
+
+#                [login] => htollefsen
+#                [id] => 3762720
+#                [avatar_url] => https://avatars.githubusercontent.com/u/3762720?v=3
+#                [gravatar_id] =>
+#                [url] => https://api.github.com/users/htollefsen
+#                [html_url] => https://github.com/htollefsen
+#                [followers_url] => https://api.github.com/users/htollefsen/followers
+#                [following_url] => https://api.github.com/users/htollefsen/following{/other_user}
+#                [gists_url] => https://api.github.com/users/htollefsen/gists{/gist_id}
+#                [starred_url] => https://api.github.com/users/htollefsen/starred{/owner}{/repo}
+#                [subscriptions_url] => https://api.github.com/users/htollefsen/subscriptions
+#                [organizations_url] => https://api.github.com/users/htollefsen/orgs
+#                [repos_url] => https://api.github.com/users/htollefsen/repos
+#                [events_url] => https://api.github.com/users/htollefsen/events{/privacy}
+#                [received_events_url] => https://api.github.com/users/htollefsen/received_events
+#                [type] => User
+#                [site_admin] =>
+#                [name] => Harald Tollefsen
+#                [company] => Netmaking AS
+#                [blog] => htollefsen.com
+#                [location] => Oslo, Norway
+#                [email] =>
+#                [hireable] =>
+#                [bio] =>
+#                [public_repos] => 20
+#                [public_gists] => 0
+#                [followers] => 1
+#                [following] => 5
+#                [created_at] => 2013-03-04T09:07:06Z
+#                [updated_at] => 2016-06-16T12:34:16Z

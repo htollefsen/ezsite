@@ -1,0 +1,64 @@
+organization:
+    identifier: organization
+    name_schema: <title>
+    contenttype_groups:
+        - Github
+        - Content
+    fields:
+        login:
+            type: ezstring
+            position: 10
+            is_required: true
+#name
+        title:
+            type: ezstring
+            position: 20
+#id
+        github_id:
+            type: ezinteger
+            position: 30
+#avatar_url
+        image:
+            type: ezimage
+            position: 35
+#html_url
+        url:
+            type: ezurl
+            position: 40
+        description:
+            type: eztext
+            position: 70
+        blog:
+            type: ezurl
+            position: 80
+        members:
+            type: ezobjectrelationlist
+            position: 90
+
+
+
+#    [login] => transfer-framework
+#    [id] => 13108546
+#    [url] => https://api.github.com/orgs/transfer-framework
+#    [repos_url] => https://api.github.com/orgs/transfer-framework/repos
+#    [events_url] => https://api.github.com/orgs/transfer-framework/events
+#    [hooks_url] => https://api.github.com/orgs/transfer-framework/hooks
+#    [issues_url] => https://api.github.com/orgs/transfer-framework/issues
+#    [members_url] => https://api.github.com/orgs/transfer-framework/members{/member}
+#    [public_members_url] => https://api.github.com/orgs/transfer-framework/public_members{/member}
+#    [avatar_url] => https://avatars.githubusercontent.com/u/13108546?v=3
+#    [description] => Transfer is a set of tools for developing and running data import or export tasks
+#    [name] => Transfer Framework
+#    [company] =>
+#    [blog] => transfer-framework.com
+#    [location] =>
+#    [email] =>
+#    [public_repos] => 10
+#    [public_gists] => 0
+#    [followers] => 0
+#    [following] => 0
+#    [html_url] => https://github.com/transfer-framework
+#    [created_at] => 2015-06-29T20:45:45Z
+#    [updated_at] => 2016-05-30T18:06:07Z
+#    [type] => Organization
+

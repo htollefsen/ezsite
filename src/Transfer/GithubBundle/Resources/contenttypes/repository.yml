@@ -1,0 +1,136 @@
+repository:
+    identifier: repository
+    name_schema: <title>
+    contenttype_groups:
+        - Github
+        - Content
+    fields:
+        title:
+            type: ezstring
+            position: 20
+            is_required: true
+        full_name:
+            type: ezstring
+            position: 10
+            is_required: true
+#id
+        github_id:
+            type: ezinteger
+            position: 30
+        description:
+            type: eztext
+            position: 35
+#html_url
+        url:
+            type: ezurl
+            position: 40
+        git_url:
+            type: ezurl
+            position: 50
+        homepage:
+            type: ezurl
+            position: 55
+        language:
+            type: ezstring
+            position: 60
+        default_branch:
+            type: ezstring
+            position: 70
+
+
+
+#    [id] => 41756567
+#    [name] => bridge
+#    [full_name] => transfer-framework/bridge
+#    [owner] => Array
+#        (
+#            [login] => transfer-framework
+#            [id] => 13108546
+#            [avatar_url] => https://avatars.githubusercontent.com/u/13108546?v=3
+#            [gravatar_id] =>
+#            [url] => https://api.github.com/users/transfer-framework
+#            [html_url] => https://github.com/transfer-framework
+#            [followers_url] => https://api.github.com/users/transfer-framework/followers
+#            [following_url] => https://api.github.com/users/transfer-framework/following{/other_user}
+#            [gists_url] => https://api.github.com/users/transfer-framework/gists{/gist_id}
+#            [starred_url] => https://api.github.com/users/transfer-framework/starred{/owner}{/repo}
+#            [subscriptions_url] => https://api.github.com/users/transfer-framework/subscriptions
+#            [organizations_url] => https://api.github.com/users/transfer-framework/orgs
+#            [repos_url] => https://api.github.com/users/transfer-framework/repos
+#            [events_url] => https://api.github.com/users/transfer-framework/events{/privacy}
+#            [received_events_url] => https://api.github.com/users/transfer-framework/received_events
+#            [type] => Organization
+#            [site_admin] =>
+#        )
+#
+#    [private] =>
+#    [html_url] => https://github.com/transfer-framework/bridge
+#    [description] => Simple service layer abstraction
+#    [fork] =>
+#    [url] => https://api.github.com/repos/transfer-framework/bridge
+#    [forks_url] => https://api.github.com/repos/transfer-framework/bridge/forks
+#    [keys_url] => https://api.github.com/repos/transfer-framework/bridge/keys{/key_id}
+#    [collaborators_url] => https://api.github.com/repos/transfer-framework/bridge/collaborators{/collaborator}
+#    [teams_url] => https://api.github.com/repos/transfer-framework/bridge/teams
+#    [hooks_url] => https://api.github.com/repos/transfer-framework/bridge/hooks
+#    [issue_events_url] => https://api.github.com/repos/transfer-framework/bridge/issues/events{/number}
+#    [events_url] => https://api.github.com/repos/transfer-framework/bridge/events
+#    [assignees_url] => https://api.github.com/repos/transfer-framework/bridge/assignees{/user}
+#    [branches_url] => https://api.github.com/repos/transfer-framework/bridge/branches{/branch}
+#    [tags_url] => https://api.github.com/repos/transfer-framework/bridge/tags
+#    [blobs_url] => https://api.github.com/repos/transfer-framework/bridge/git/blobs{/sha}
+#    [git_tags_url] => https://api.github.com/repos/transfer-framework/bridge/git/tags{/sha}
+#    [git_refs_url] => https://api.github.com/repos/transfer-framework/bridge/git/refs{/sha}
+#    [trees_url] => https://api.github.com/repos/transfer-framework/bridge/git/trees{/sha}
+#    [statuses_url] => https://api.github.com/repos/transfer-framework/bridge/statuses/{sha}
+#    [languages_url] => https://api.github.com/repos/transfer-framework/bridge/languages
+#    [stargazers_url] => https://api.github.com/repos/transfer-framework/bridge/stargazers
+#    [contributors_url] => https://api.github.com/repos/transfer-framework/bridge/contributors
+#    [subscribers_url] => https://api.github.com/repos/transfer-framework/bridge/subscribers
+#    [subscription_url] => https://api.github.com/repos/transfer-framework/bridge/subscription
+#    [commits_url] => https://api.github.com/repos/transfer-framework/bridge/commits{/sha}
+#    [git_commits_url] => https://api.github.com/repos/transfer-framework/bridge/git/commits{/sha}
+#    [comments_url] => https://api.github.com/repos/transfer-framework/bridge/comments{/number}
+#    [issue_comment_url] => https://api.github.com/repos/transfer-framework/bridge/issues/comments{/number}
+#    [contents_url] => https://api.github.com/repos/transfer-framework/bridge/contents/{+path}
+#    [compare_url] => https://api.github.com/repos/transfer-framework/bridge/compare/{base}...{head}
+#    [merges_url] => https://api.github.com/repos/transfer-framework/bridge/merges
+#    [archive_url] => https://api.github.com/repos/transfer-framework/bridge/{archive_format}{/ref}
+#    [downloads_url] => https://api.github.com/repos/transfer-framework/bridge/downloads
+#    [issues_url] => https://api.github.com/repos/transfer-framework/bridge/issues{/number}
+#    [pulls_url] => https://api.github.com/repos/transfer-framework/bridge/pulls{/number}
+#    [milestones_url] => https://api.github.com/repos/transfer-framework/bridge/milestones{/number}
+#    [notifications_url] => https://api.github.com/repos/transfer-framework/bridge/notifications{?since,all,participating}
+#    [labels_url] => https://api.github.com/repos/transfer-framework/bridge/labels{/name}
+#    [releases_url] => https://api.github.com/repos/transfer-framework/bridge/releases{/id}
+#    [deployments_url] => https://api.github.com/repos/transfer-framework/bridge/deployments
+#    [created_at] => 2015-09-01T18:42:33Z
+#    [updated_at] => 2015-09-01T20:09:47Z
+#    [pushed_at] => 2015-10-25T09:06:04Z
+#    [git_url] => git://github.com/transfer-framework/bridge.git
+#    [ssh_url] => git@github.com:transfer-framework/bridge.git
+#    [clone_url] => https://github.com/transfer-framework/bridge.git
+#    [svn_url] => https://github.com/transfer-framework/bridge
+#    [homepage] =>
+#    [size] => 204
+#    [stargazers_count] => 0
+#    [watchers_count] => 0
+#    [language] => PHP
+#    [has_issues] => 1
+#    [has_downloads] => 1
+#    [has_wiki] =>
+#    [has_pages] =>
+#    [forks_count] => 0
+#    [mirror_url] =>
+#    [open_issues_count] => 0
+#    [forks] => 0
+#    [open_issues] => 0
+#    [watchers] => 0
+#    [default_branch] => 0.1
+#    [permissions] => Array
+#        (
+#            [admin] =>
+#            [push] =>
+#            [pull] => 1
+#        )
+#

@@ -1,0 +1,41 @@
+language: php
+
+# We do Behat testing here, lots of sudo going on
+sudo: required
+
+matrix:
+  include:
+    - php: 5.6
+      env: ARGS="--profile=core"
+    - php: 5.5
+      env: ARGS="--profile=rest --suite=fullJson"
+    - php: 7.0
+      env: ARGS="--profile=rest --suite=fullXml"
+
+# test only master (+ Pull requests)
+branches:
+  only:
+    - master
+    - "1.3"
+
+# install packages
+before_install:
+  - ./bin/.travis/prepare_system.sh
+  - ./bin/.travis/prepare_selenium2.sh
+
+# setup requirements for running tests
+before_script:
+  # Prepare eZ Publish (composer, permissions, assets, cache warmup)
+  - ./bin/.travis/prepare_ezpublish.sh
+
+# execute behat as the script command
+script:
+  - php bin/behat -c behat.yml.dist $ARGS --tags='~@broken'
+
+# disable mail notifications
+notifications:
+  email: false
+
+# reduce depth (history) of git checkout
+git:
+  depth: 30

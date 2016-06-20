@@ -1,0 +1,7 @@
+services:
+    transfer.manifest.githubusers_to_users:
+        class: Transfer\GithubBundle\Transfer\Manifest\GithubToEzPlatformManifest
+        arguments:
+            - @ezpublish.api.repository
+        tags:
+            - { name: transfer.manifest }

@@ -1,0 +1,7 @@
+services:
+    importbundle.transfer.manifest.yamlfiles_to_contenttypes:
+        class: ImportBundle\Transfer\Manifest\YamlFilesToEzPlatformContentTypeManifest
+        arguments:
+            - @ezpublish.api.repository
+        tags:
+            - { name: transfer.manifest }

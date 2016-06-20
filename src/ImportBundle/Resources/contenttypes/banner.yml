@@ -1,0 +1,8 @@
+banner:
+    fields:
+        title:
+            type: ezstring
+            position: 5
+        publish_date:
+            type: ezdate
+            position: 15
